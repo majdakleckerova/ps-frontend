@@ -1,5 +1,5 @@
 import streamlit as st
-st.set_page_config(page_title="Hledání chybiček",page_icon=":left_speech_bubble:",layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Hledání chyb",page_icon=":left_speech_bubble:",layout="wide",theme={"base": "dark"}, initial_sidebar_state="expanded")
 
 hide_streamlit_style = """<style>
                 {visibility: hidden;}
@@ -16,7 +16,7 @@ if main_options == "Fakulta":
 if main_options == "Katedra":
     st.selectbox("Zvolte katedru:",["KMA","KI","zbytek doplníme"])
 if main_options == "Studijní program":
-    st.selectbox("Zvolte studijní prográmek:",["MFVS","Aplikovaná informatika","Ekonomika a management","Chemie a toxikologie","Geografie","a tak dále"])
+    st.selectbox("Zvolte studijní program:",["MFVS","Aplikovaná informatika","Ekonomika a management","Chemie a toxikologie","Geografie","a tak dále"])
 if main_options == "Učitel":
     st.selectbox("Zvolte učitele:",["učitel1","učitel2","učitel3","a tak dále"])
 
